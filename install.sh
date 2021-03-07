@@ -24,14 +24,15 @@ mkdir ~/Projects
 echo "Downloading repo from ${github}/local..."
 git clone https://github.com/${github}/local.git ~/Projects/local
 
+# Link bash profile
+echo "Linking bash profile..."
+mv ~/.bash_profile ~/.bash_profile.bac
+ln -s ~/Projects/local/.bash_profile ~/.bash_profile
+source ~/.bash_profile
+
 # Install needed tools
 echo "Installing tools..."
 for tool in ~/Projects/local/tools/*
 do
   /bin/bash "$tool"
 done
-
-# Link bash profile
-echo "Finishing up..."
-mv ~/.bash_profile ~/.bash_profile.bac
-ln -s ~/Projects/local/.bash_profile ~/.bash_profile
