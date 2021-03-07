@@ -19,6 +19,13 @@ git config --global user.name "$name"
 read -p "Enter your email [$default_email]: " email
 git config --global user.email "$email"
 
+# Setting up SSH key
+ssh-keygen -t ed25519 -C "$email"
+eval "$(ssh-agent -s)"
+touch ~/.ssh/config
+echo "\nHost *\n  AddKeysToAgent yes\n  IdentityFile ~/.ssh/id_ed25519\n" >> ~/.ssh/config
+ssh-add -K ~/.ssh/id_ed25519
+
 # Setup Projects Folder
 echo "Setting up projects..."
 mkdir ~/Projects
