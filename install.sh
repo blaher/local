@@ -21,7 +21,8 @@ echo "Setting up projects..."
 mkdir ~/Projects
 
 # Download Repo
-git clone git@github.com:${github}/local.git ~/Projects/local
+echo "Downloading repo from ${github}/local..."
+git clone https://github.com/${github}/local.git ~/Projects/local
 
 # Install needed tools
 echo "Installing tools..."
