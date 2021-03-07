@@ -3,7 +3,7 @@ default_github="blaher"
 default_name="Benjamin J. Young"
 default_name=${default_name:-"$(git config --global user.name)"}
 default_email=""
-default_email=${default_name:-"$(git config --global user.email)"}
+default_email=${default_email:-"$(git config --global user.email)"}
 
 # Setup xcode
 echo "Setting up xcode..."
