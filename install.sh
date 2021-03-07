@@ -29,4 +29,5 @@ done
 
 # Link bash profile
 echo "Finishing up..."
+mv ~/.bash_profile ~/.bash_profile.bac
 ln -s ~/Projects/local/.bash_profile ~/.bash_profile
