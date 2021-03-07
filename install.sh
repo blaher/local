@@ -33,6 +33,8 @@ mv ~/.bash_profile ~/.bash_profile.bac
 ln -s ~/Projects/local/.bash_profile ~/.bash_profile
 source ~/.bash_profile
 
+# Finshed
+echo "Please either restart all terminals or run 'source ~/.bash_profile'!"
 # Install needed tools
 echo "Installing tools..."
 for tool in ~/Projects/local/tools/*
