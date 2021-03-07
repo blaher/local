@@ -11,17 +11,15 @@ git config --global user.email "$email"
 
 # Setup Projects Folder
 mkdir ~/Projects
-cd ~/Projects
 
 # Download Repo
 git clone https://github.com/blaher/local-environment.git
-cd local-environment
 
 # Install neeeded tools
-for tool in ./tools/*
+for tool in ~/Projects/local-environment/tools/*
 do
   /bin/bash "$tool"
 done
 
 # Link bash profile
-ln -s ./.bash_profile ~/.bash_profile
+ln -s ~/Projects/local-environment/.bash_profile ~/.bash_profile
