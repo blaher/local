@@ -4,7 +4,7 @@ xcode-select --install
 
 mkdir ~/Projects
 cd ~/Projects
-git clone git@github.com:blaher/local-environment.git
+git clone https://github.com/blaher/local-environment.git
 cd local-environment
 
 for tool in /tools/*
