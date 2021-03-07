@@ -18,10 +18,10 @@ git clone https://github.com/blaher/local-environment.git
 cd local-environment
 
 # Install neeeded tools
-for tool in /tools/*
+for tool in ./tools/*
 do
   /bin/bash "$tool"
 done
 
 # Link bash profile
-ln -s ~/.bash_profile ./.bash_profile
+ln -s ./.bash_profile ~/.bash_profile
