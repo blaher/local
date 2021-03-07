@@ -40,5 +40,8 @@ do
   /bin/bash "$tool"
 done
 
+# Setting Projects icon
+fileicon set ~/Projects ~/Projects/local/projects.png
+
 # Finshed
 echo "Please either restart all terminals or run 'source ~/.bash_profile'!"
