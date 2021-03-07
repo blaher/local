@@ -1,6 +1,9 @@
 #!/bin/bash
 default_github="blaher"
 default_name="Benjamin J. Young"
+default_name=${default_name:-"$(git config --global user.name)"}
+default_email=""
+default_email=${default_name:-"$(git config --global user.email)"}
 
 # Setup xcode
 echo "Setting up xcode..."
@@ -13,7 +16,7 @@ github=${name:-"$default_github"}
 read -p "Enter your name [$default_name]: " name
 name=${name:-"$default_name"}
 git config --global user.name "$name"
-read -p "Enter your email: " name
+read -p "Enter your email [$default_email]: " email
 git config --global user.email "$email"
 
 # Setup Projects Folder
