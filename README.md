@@ -1,4 +1,4 @@
-# local-environment
+# Mac OS Local Environment Setup
 My profile scripts for a portable working environment on Mac OS
 
 ## How to install
