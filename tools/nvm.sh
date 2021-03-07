@@ -7,4 +7,5 @@ echo "Refreshing bash profile..."
 source ~/.bash_profile
 
 echo "Installing Node..."
+nvm install node
 nvm use node
