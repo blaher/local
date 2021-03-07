@@ -18,7 +18,7 @@ echo "Setting up projects..."
 mkdir ~/Projects
 
 # Download Repo
-git clone https://github.com/blaher/local.git ~/Projects/local
+git clone git@github.com:blaher/local.git ~/Projects/local
 
 # Install needed tools
 echo "Installing tools..."
