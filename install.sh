@@ -40,6 +40,12 @@ mv ~/.bash_profile ~/.bash_profile.bac
 ln -s ~/Projects/local/.bash_profile ~/.bash_profile
 source ~/.bash_profile
 
+# Link bash profile
+echo "Linking bash aliases..."
+mv ~/.bash_aliases ~/.bash_aliases.bac
+ln -s ~/Projects/local/.bash_aliases ~/.bash_aliases
+source ~/.bash_aliases
+
 # Install needed tools
 echo "Installing tools..."
 for tool in ~/Projects/local/tools/*
