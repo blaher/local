@@ -1,2 +1,2 @@
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-. "~/bash_aliases"
+[[ -r "~/.bash_autocomplete" ]] && . "~/.bash_autocomplete"
+. "~/.bash_aliases"
