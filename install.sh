@@ -23,7 +23,7 @@ git config --global user.email "$email"
 ssh-keygen -t ed25519 -C "$email"
 eval "$(ssh-agent -s)"
 touch ~/.ssh/config
-echo "\nHost *\n  AddKeysToAgent yes\n  IdentityFile ~/.ssh/id_ed25519\n" >> ~/.ssh/config
+printf "\nHost *\n  AddKeysToAgent yes\n  IdentityFile ~/.ssh/id_ed25519\n" >> ~/.ssh/config
 ssh-add -K ~/.ssh/id_ed25519
 
 # Setup Projects Folder
