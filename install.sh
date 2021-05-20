@@ -28,7 +28,8 @@ ssh-add -K ~/.ssh/id_ed25519
 
 # Setup Projects Folder
 echo "Setting up projects..."
-mkdir ~/Projects
+mkdir ~/Documents/Code
+ln -s ~/Documents/Code ~/Projects
 
 # Download Repo
 echo "Downloading repo from ${github}/local..."
