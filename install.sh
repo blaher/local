@@ -36,15 +36,12 @@ echo "Downloading repo from ${github}/local..."
 git clone https://github.com/${github}/local.git ~/Projects/local
 
 # Link bash profile
-echo "Linking bash profile..."
+echo "Linking bash profile and aliases..."
 mv ~/.bash_profile ~/.bash_profile.bac
-ln -s ~/Projects/local/.bash_profile ~/.bash_profile
-source ~/.bash_profile
-
-# Link bash profile
-echo "Linking bash aliases..."
 mv ~/.bash_aliases ~/.bash_aliases.bac
+ln -s ~/Projects/local/.bash_profile ~/.bash_profile
 ln -s ~/Projects/local/.bash_aliases ~/.bash_aliases
+source ~/.bash_profile
 source ~/.bash_aliases
 
 # Install needed tools
