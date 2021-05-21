@@ -1,2 +1,6 @@
-[[ -r "~/.bash_autocomplete" ]] && . ~/.bash_autocomplete
-[[ -r "~/.bash_aliases" ]] && . "~/.bash_aliases"
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+if [ -f ~/.bash_autocomplete ]; then
+    source ~/.bash_autocomplete
+fi
