@@ -9,3 +9,9 @@ source ~/.bash_profile
 echo "Installing Node..."
 nvm install node
 nvm use node
+
+echo "Installing NPM tools..."
+for tool in ~/Projects/local/tools/npm/*
+do
+  /bin/bash "$tool"
+done
